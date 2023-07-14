@@ -2,7 +2,7 @@
   <head>
     <title>voice a</title>
     <script src="script.js"></script>
-    <script src="script2.js"></script>
+   
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -80,10 +80,10 @@
     <div class="container">
       <form
         onsubmit=" event.preventDefault()
-      ChatUserAdd( document.getElementById('number').value , document.getElementById)
+      ChatUserAdd( document.getElementById('number').value , document.getElementById('input_text').value)
       openai_test();"
       >
-        <textarea placeholder="Ask your qustion..."></textarea>
+        <textarea id="input_text" placeholder="Ask your qustion..."></textarea>
         <br />
         <button>Submit</button>
         <select class="form-select" id="languages" name="languages">

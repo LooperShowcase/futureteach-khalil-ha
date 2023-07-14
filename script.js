@@ -7,14 +7,15 @@ let chat = [
 async function ChatUserAdd(feeling, question) {
   chat.push({
     role: "user",
-    content: "My Happines from 0-10. " + feeling + " . My question is ",
-    question,
+    content:
+      "My Happines from 0-10: " + feeling + " . My question is " + question,
   });
 }
 
 async function ChatAssitantAdd(res) {
   chat.push({ role: "assistant", content: res });
 }
+
 async function openai_test() {
   let url = "https://api.openai.com/v1/chat/completions";
   let part1 = "sk";
